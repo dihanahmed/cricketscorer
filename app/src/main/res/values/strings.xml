@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cricket</string>
+    <string name="teams">Teams</string>
+    <string name="h">Host</string>
+    <string name="v">Visitor</string>
+    <string name="decision">Decision</string>
+    <string name="toss">Toss won by</string>
+    <string name="bat">bat</string>
+    <string name="bowl">bowl</string>
+    <string name="title">Cricket Scorer</string>
+    <string name="title2">Player Input Page</string>
+    <string name="hostxi">Host XI</string>
+    <string name="visitxi">Visitor XI</string>
+    <string name="nextbutton">Next</string>
+    <string name="no_1">no 1</string>
+    <string name="no_2">no 2</string>
+    <string name="no_3">no 3</string>
+    <string name="no_4">no 4</string>
+    <string name="no_5">no 5</string>
+    <string name="no_6">no 6</string>
+    <string name="no_7">no 7</string>
+    <string name="no_8">no 8</string>
+    <string name="no_9">no 9</string>
+    <string name="no_10">no 10</string>
+    <string name="no_11">no 11</string>
+
+
+</resources>
