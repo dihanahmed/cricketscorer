@@ -49,10 +49,11 @@ String name=Name.getText().toString();
 
 if(view.getId()==R.id.signupID){
   long rowId=sQlitedatabase.insertData(name , email, pass);
-if(rowId>0){
-    Toast.makeText(getApplicationContext(), "row "+rowId+" is inserted",Toast.LENGTH_LONG);
-} else {
+if(rowId==-1){
     Toast.makeText(getApplicationContext(), "unseccessful",Toast.LENGTH_LONG);
+
+} else {
+    Toast.makeText(getApplicationContext(), "row "+rowId+" is inserted",Toast.LENGTH_LONG);
 }
 }
 
