@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class match extends AppCompatActivity {
     private int balls=0;
+    private int batball=0;
 
     private TextView runs;
     private TextView wickets;
@@ -25,6 +26,8 @@ public class match extends AppCompatActivity {
     private Button WICKET;
     private TextView CBRUN;
     private TextView CBWICKET;
+    private TextView CBATRUN;
+    private TextView CBATBALLS;
 
 
     @Override
@@ -60,6 +63,9 @@ public class match extends AppCompatActivity {
         int score = Integer.parseInt(runs.getText().toString());
         runs.setText((run+score)+"");
         CBRUN.setText(""+(run+Integer.parseInt(CBRUN.getText().toString())));
+        CBATRUN.setText(""+(run+Integer.parseInt((CBATRUN.getText().toString()))));
+        batball++;
+        CBATBALLS.setText(""+batball);
 
         balls++;
         if(balls==6){
@@ -72,6 +78,7 @@ public class match extends AppCompatActivity {
         int Wicket= Integer.parseInt(wickets.getText().toString());
         wickets.setText((bold+Wicket)+"");
         addcbwicket(bold);
+        renewbatsman(bold);
     }
    /* private void addcbRun(int run) {
 
@@ -96,6 +103,13 @@ public class match extends AppCompatActivity {
 
 
     }
+    public void  renewbatsman(int count){
+        CBATRUN.setText("0");
+        CBATBALLS.setText("0");
+        batball=0;
+
+
+    }
 
     private void setupuiviews() {
 
@@ -113,5 +127,7 @@ public class match extends AppCompatActivity {
         overs = (TextView) findViewById(R.id.ovs);
         CBRUN = (TextView) findViewById(R.id.cbrun);
         CBWICKET= (TextView) findViewById(R.id.cbwicket);
+        CBATRUN=(TextView)findViewById(R.id.cbatrun);
+        CBATBALLS=(TextView)findViewById(R.id.cbatballs);
     }
 }

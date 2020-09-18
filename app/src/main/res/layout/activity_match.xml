@@ -151,7 +151,7 @@
         android:layout_marginRight="84dp"
         android:text="Balls"
         android:textColor="#000"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintBottom_toTopOf="@+id/cbatballs"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -177,7 +177,8 @@
         app:layout_constraintStart_toEndOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/cbatballs"
+        android:text="0"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="85dp"
@@ -235,14 +236,15 @@
         app:layout_constraintVertical_bias="0.88" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/cbatrun"
+        android:text="0"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/cbatballs"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView9" />
 
@@ -278,7 +280,7 @@
         android:layout_marginRight="56dp"
         android:text="Runs"
         android:textColor="#000"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintBottom_toTopOf="@+id/cbatrun"
         app:layout_constraintEnd_toStartOf="@+id/textView13" />
 
     <TextView
